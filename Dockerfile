@@ -1,4 +1,4 @@
-FROM php:7.2.4-cli
+FROM php:7.2.4-fpm
 
 MAINTAINER Angelo Landino <angelo.landino@hotmail.it>
 
