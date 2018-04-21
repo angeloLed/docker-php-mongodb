@@ -1,6 +1,6 @@
 FROM php:7.2.4-fpm
 
-LABEL maintainer "Angelo Landino <angelo.landino@hotmail.it>"
+LABEL maintainer "Angelo Landino <angelolandino@hotmail.it>"
 
 ARG MONGODB_DRIVER_VERSION=1.4.3
 
