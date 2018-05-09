@@ -10,7 +10,7 @@ if [ "$1" = "start-stack" ]; then
     # done
 
     #bootloading for configuration
-    #/bin/bash /docker/scripts/bootloader.sh
+    /bin/bash /docker/scripts/bootloader.sh
 
     #call supervisord to launch the whole stack
     /usr/bin/supervisord --nodaemon --configuration=/docker/configuration/supervisord/supervisor.conf
