@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-MAINTAINER Pietro Bonaccorso 'angelolandino@hotmail.it'
+MAINTAINER Angelo Landino 'angelolandino@hotmail.it'
 LABEL description='This image embeds Nginx 1.9 and php-fpm using PHP 7'
 
 ENV APP_CWD='/app/code' \
