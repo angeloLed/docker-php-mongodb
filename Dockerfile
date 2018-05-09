@@ -1,5 +1,5 @@
 FROM nginx:1.10.1-alpine
-LABEL maintainer "Giuseppe Iannelli <giuseppe.iannelli@mosaicoon.com>, Pietro Bonaccorso <pietro.b@mosaicoon.com>"
+LABEL maintainer "Giuseppe Iannelli <giuseppe.iannelli@mosaicoon.com>, Pietro Bonaccorso <pietro.b@mosaicoon.com>, Angelo Landino <angelo.landino@mosaicoon.com>"
 LABEL description "Nginx, PHP 7 stack running on alpine with supervisord"
 
 ###############################################################################
@@ -38,10 +38,10 @@ ENV APP_CWD='/app/code' \
 
 ENV PHP_INI_DIR='/usr/local/etc/php' \
   PHP_EXTRA_CONFIGURE_ARGS='--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --enable-maintainer-zts --enable-zip --with-libdir=/usr/lib' \
-  GPG_KEYS='1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763' \
-  PHP_VERSION='7.0.11' \
-  PHP_FILENAME='php-7.0.11.tar.xz' \
-  PHP_SHA256='d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735'
+  GPG_KEYS='B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F' \
+  PHP_VERSION='7.2.5' \
+  PHP_FILENAME='php-7.2.5.tar.xz' \
+  PHP_SHA256='af70a33b3f7a51510467199b39af151333fbbe4cc21923bad9c7cf64268cddb2'
 
 # persistent / runtime deps
 RUN apk add --no-cache --virtual .persistent-deps \
