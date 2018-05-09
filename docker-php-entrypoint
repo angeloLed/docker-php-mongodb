@@ -1,0 +1,10 @@
+#!/bin/sh
+set -ex
+
+echo "Set php-fpm process manager configuration"
+envsubst < /docker/configurations/php/conf.d/www.conf > /usr/local/etc/php-fpm.d/www.conf
+echo "Set custom php configurations"
+envsubst < /docker/configurations/php/conf.d/app.ini > /usr/local/etc/php/conf.d/app.ini
+
+php-fpm -D
+tail -f ${FPM_CUSTOM_LOGFILE}

@@ -1,4 +1,4 @@
-FROM php:7.2.4-fpm-alpine
+FROM php:7.2.5-fpm-alpine
 
 LABEL maintainer "Angelo Landino <angelo.landino@hotmail.it>"
 LABEL description "php-fpm image with exif,gd,mysqli,mongodb,pcntl,pdo_mysql,opcache,rdkafka,redis,ssh,soap,sockets,zip modules and composer"
